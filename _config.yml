@@ -1,0 +1,37 @@
+title: Nanodash
+subtitle: The World's Smallest Dashboarding Engine
+repository: gvwilson/nanodash
+lang: en
+authors:
+  - name: "Martha Cryan"
+    email: "martha.cryan@plot.ly"
+  - name: "Emily Kellison-Lim"
+    email: "emily@plot.ly"
+  - name: "Greg Wilson"
+    email: "greg.wilson@plot.ly"
+
+exclude:
+  - CODE_OF_CONDUCT.md
+  - CONTRIBUTING.md
+  - LICENSE.md
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - Makefile
+  - '.#*'
+  - '*~'
+
+baseurl: /nanodash
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+permalink: pretty
+markdown: kramdown
+highlighter: rouge
+
+plugins:
+  - jekyll-redirect-from
+  - jekyll-sitemap

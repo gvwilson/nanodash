@@ -1,0 +1,10 @@
+{%- comment -%}
+Head of web pages.
+{%- endcomment -%}
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="icon" href="{{ '/assets/favicon.svg' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/bw.css' | relative_url }}" type="text/css">
+<link rel="stylesheet" href="{{ '/assets/site.css' | relative_url }}" type="text/css">
+<title>{{ site.title }}{% if page.title %} &middot; {{ page.title }}{% endif %}</title>
