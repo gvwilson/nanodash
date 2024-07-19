@@ -1,7 +1,8 @@
 ---
 ---
 
-<div class="toc" markdown="1">
+*A half-day tutorial showing how to build a scale model of a dashboarding engine like [Plotly Dash](https://dash.plotly.com/).*
+
 **Contents**
 
 -   Lessons
@@ -11,6 +12,3 @@
     -   [License](./license/)
     -   [Contributing](./contrib/)
     -   [Code of Conduct](./conduct/)
-</div>
-
-{% include rootfile.html filename='README.md' %}
