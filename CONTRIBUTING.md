@@ -6,7 +6,11 @@ acknowledged, but must abide by our Code of Conduct.
 
 ## Usage
 
--   Run `make` in the root directory or any subdirectory containing an `index.md` file to see available commands.
+To build or preview this site:
+-   Create a virtual environment using Python 3.12
+-   Install requirements with `pip install -r requirements.txt`
+-   Run `make build` to build the website into `./docs`
+-   Run `make serve` to preview the website
 
 ## Site Structure
 
@@ -14,11 +18,11 @@ acknowledged, but must abide by our Code of Conduct.
 -   `LICENSE.md`: content license
 -   `CODE_OF_CONDUCT.md`: code of conduct
 -   `CONTRIBUTING.md`: this contributors' guide
--   `Makefile`: reusable commands
--   `index.md`: home page
--   `*_.md`: Jekyll wrappers for license, contributors' guide, and code of conduct
 -   `requirements.txt`: Python package list
--   `src/`: source code (one sub-directory per tutorial episode)
-    -   `src/00-intro`: introduction
-    -   `src/01-manual`: hand-written JavaScript and Python
+-   `Makefile`: reusable commands
 -   `tutorials.mk`: shared reusable commands
+-   `src/`: source code (one sub-directory per tutorial episode)
+    -   `src/index.md`: home page
+    -   `src/00-intro/*`: introduction
+    -   `src/01-manual/*`: hand-written JavaScript and Python
+    -   `src/02-dynamic/*`: loading content dynamically

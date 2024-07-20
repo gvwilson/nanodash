@@ -1,4 +1,6 @@
+ark
 dash
 flask
 flask-cors
+pymdown-extensions
 ruff

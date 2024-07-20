@@ -1,12 +1,13 @@
 include tutorials.mk
 
-## build: build website with Jekyll
+## build: build website
 build:
-	jekyll build
+	ark build
+	touch docs/.nojekyll
 
-## serve: serve website with Jekyll
+## serve: serve website
 serve:
-	jekyll serve
+	ark serve
 
 ## lint: check code
 lint:

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="icon" href="../favicon.svg">
+<link rel="stylesheet" href="../bw.css" type="text/css">
+<link rel="stylesheet" href="../site.css" type="text/css">
+<title>Nanodash &middot; Contributing</title>
+
+  </head>
+  <body>
+    <main>
+      <h1>Contributing</h1>
+
+<p>Contributions are very welcome.  Please file issues or submit pull
+requests in our GitHub repository.  All contributors will be
+acknowledged, but must abide by our Code of Conduct.</p>
+<h2>Usage</h2>
+<p>To build or preview this site:
+-   Create a virtual environment using Python 3.12
+-   Install requirements with <code>pip install -r requirements.txt</code>
+-   Run <code>make build</code> to build the website into <code>./docs</code>
+-   Run <code>make serve</code> to preview the website</p>
+<h2>Site Structure</h2>
+<ul>
+<li><code>README.md</code>: overview</li>
+<li><code>LICENSE.md</code>: content license</li>
+<li><code>CODE_OF_CONDUCT.md</code>: code of conduct</li>
+<li><code>CONTRIBUTING.md</code>: this contributors&rsquo; guide</li>
+<li><code>requirements.txt</code>: Python package list</li>
+<li><code>Makefile</code>: reusable commands</li>
+<li><code>tutorials.mk</code>: shared reusable commands</li>
+<li><code>src/</code>: source code (one sub-directory per tutorial episode)<ul>
+<li><code>src/index.md</code>: home page</li>
+<li><code>src/00-intro/*</code>: introduction</li>
+<li><code>src/01-manual/*</code>: hand-written JavaScript and Python</li>
+<li><code>src/02-dynamic/*</code>: loading content dynamically</li>
+</ul>
+</li>
+</ul>
+    </main>
+    <footer>
+  © 2024 the contributors
+  &middot;
+  <a href="../">home</a>
+  &middot;
+  <a href="https://github.com/gvwilson/nanodash">repository</a>
+  &middot;
+  <a href="../license/">license</a>
+</footer>
+
+  </body>
+</html>
