@@ -65,3 +65,7 @@ class Em(Node):
 class Span(Node):
     def __init__(self, *children):
         super().__init__(False, "span", *children)
+
+
+if __name__ == "__main__":
+    print(Div(Span("first"), Span("second", Em("third"), "fourth")))
