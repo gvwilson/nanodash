@@ -8,6 +8,7 @@
 -   Lessons
     -   [Introduction](./00-intro/)
     -   [Doing It by Hand](./01-manual/)
+    -   [Generating Pages](./02-generate/)
 -   Extras
     -   [License](./license/)
     -   [Contributing](./contrib/)
