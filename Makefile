@@ -3,7 +3,7 @@ include tutorials.mk
 ## build: build website
 build:
 	ark build
-	touch docs/.nojekyll
+	@touch docs/.nojekyll
 
 ## serve: serve website
 serve:
@@ -12,3 +12,7 @@ serve:
 ## lint: check code
 lint:
 	ruff check ??-*
+
+## validate: check HTML
+validate:
+	@html5validator --root docs

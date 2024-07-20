@@ -15,9 +15,12 @@ MD_EXTENSIONS = [
 ]
 
 
-def allowed(kwargs, allowed):
-    """Check that dictionary keys are a subset of those allowed."""
-    return set(kwargs.keys()).issubset(allowed)
+def allowed(kwargs, allowed, strict=True):
+    """Check that dictionary keys are (a subset of) those allowed."""
+    if strict:
+        return set(kwargs.keys()) == allowed
+    else:
+        return set(kwargs.keys()).issubset(allowed)
 
 
 def fail(msg):

@@ -16,9 +16,11 @@ def rootfile(pargs, kwargs, node):
     """Include a file from the root directory.
 
     Usage: [% rootfile FILE.md %] or [% rootfile FILE.md strip=False %].
+
+    If `strip` is `True`, the first H1-style heading in the file is removed.
     """
     util.require(
-        (len(pargs) == 1) and util.allowed(kwargs, {"strip"}),
+        (len(pargs) == 1) and util.allowed(kwargs, {"strip"}, strict=False),
         f"Bad 'rootfile' in {node.path}: '{pargs}' and '{kwargs}'"
     )
     text = Path(ark.site.home(), pargs[0]).read_text()

@@ -1,26 +1,17 @@
 """Processing hooks used by AMW theme."""
 
 import ark
-import util
-
-EXCLUSIONS = {
-    "__pycache__",
-}
+from pathlib import Path
+from shutil import copyfile
 
 
-@ark.filters.register(ark.filters.Filter.LOAD_NODE_DIR)
-def keep_dir(value, path):
-    """Do not process directories excluded by parent."""
-    if path.name in EXCLUSIONS:
-        return False
-    path = str(path).replace(ark.site.src(), "").lstrip("/")
-    return not any(path.startswith(x) for x in ark.site.config["exclude"])
-
-
-@ark.filters.register(ark.filters.Filter.LOAD_NODE_FILE)
-def keep_file(value, path):
-    """Only process .md Markdown files."""
-    if path.suffix != ".md":
-        return False
-    path = str(path).replace(ark.site.src(), "").lstrip("/")
-    return path not in ark.site.config["exclude"]
+@ark.events.register(ark.events.Event.EXIT_BUILD)
+def exit_build():
+    """Finalize build by copying files matching patterns in configuration."""
+    for pat in ark.site.config.get("copy", []):
+        src_dir = ark.site.src()
+        out_dir = ark.site.out()
+        for src_file in Path(src_dir).rglob(f"**/{pat}"):
+            out_file = str(src_file).replace(src_dir, out_dir)
+            Path(out_file).parent.mkdir(exist_ok=True, parents=True)
+            copyfile(src_file, out_file)

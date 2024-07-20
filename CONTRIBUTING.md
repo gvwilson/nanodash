@@ -19,8 +19,10 @@ To build or preview this site:
 -   `CODE_OF_CONDUCT.md`: code of conduct
 -   `CONTRIBUTING.md`: this contributors' guide
 -   `requirements.txt`: Python package list
+    -   Relies on `lib/amw/requirements.txt` for Ark template
 -   `Makefile`: reusable commands
 -   `tutorials.mk`: shared reusable commands
+-   `lib/amw/*`: Ark template and extensions
 -   `src/`: source code (one sub-directory per tutorial episode)
     -   `src/index.md`: home page
     -   `src/00-intro/*`: introduction

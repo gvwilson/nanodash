@@ -1,6 +1,4 @@
-ark
+-r lib/amw/requirements.txt
 dash
 flask
 flask-cors
-pymdown-extensions
-ruff

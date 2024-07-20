@@ -6,13 +6,22 @@ authors = [
     {"name": "Emily Kellison-Lim", "email": "emily@plot.ly"},
     {"name": "Greg Wilson", "email": "greg.wilson@plot.ly"},
 ]
+copy = [
+    "*.html",
+    "*.js",
+    "*.json",
+    "*.out",
+    "*.png",
+    "*.py",
+    "*.sh",
+    "*.svg",
+]
 
 lang = "en"
 theme = "amw"
 src_dir = "src"
 out_dir = "docs"
 extension = "/"
-exclude = set()
 
 markdown_settings = {
     "extensions": [
