@@ -1,4 +1,4 @@
-include ../tutorials.mk
+include ../../tutorials.mk
 
 ## dom-demo: run demo of dom.py
 dom-demo:

@@ -1,4 +1,4 @@
-include ../tutorials.mk
+include ../../tutorials.mk
 
 ## colors: run colors server
 colors:

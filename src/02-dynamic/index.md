@@ -9,3 +9,5 @@ title: "Dynamic Pages"
     -   Inspect the generated page in the browser
 -   Load CSS dynamically
     -   [%inc "load-css.[py,html,js]" %]: we can do the same for JavaScript when the time comes
+-   Observer/observable
+    -   [%inc "observe_wrong.py" %]: observer/observable done wrong (doesn't prevent multiple notifications)
