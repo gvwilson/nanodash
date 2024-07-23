@@ -4,6 +4,7 @@
     -   [Introduction](@root/00-intro/)
     -   [Doing It by Hand](@root/01-manual/)
     -   [Dynamic Pages](@root/02-dynamic/)
+    -   [Generating Pages](@root/03-generate/)
 -   Extras
     -   [License](@root/license/)
     -   [Contributing](@root/contrib/)
